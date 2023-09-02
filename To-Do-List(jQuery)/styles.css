@@ -1,0 +1,93 @@
+* {
+    /* background-color: rgb(37, 37, 37); */
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace ;
+}
+.highlighted {
+    box-shadow: 0 0px 20px rgb(255, 253, 146) !important;
+    border: 1px solid black !important;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(151, 201, 235);
+}
+    main {
+        border-radius: 10px;
+        background-color: rgb(189, 223, 245);
+        padding: 20px;
+        box-shadow: 0 5px 10px rgb(0, 0, 0, 0.5);
+        overflow: auto;
+        position: relative;
+        z-index: 2;
+    }
+        input {
+            border: 1px solid rgb(99, 152, 187);
+            font-size: 18px;
+            border-radius: 5px;
+            height: 30px;
+            background-color: rgb(223, 242, 255);
+        }
+        .action {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            margin-top: 5px;
+        }
+            .action > label {
+                margin-right: auto;
+                margin: auto auto auto 0;
+            }
+            .action > input {
+                width: 20px;
+                font-size: 26px;
+                margin: auto 5px;
+            }
+            .action > i {
+                font-size: 25px;
+                justify-self: end;
+                width: 48px;
+            }
+        button {
+            font-weight: 700;
+            font-size: 21px;
+        }
+        .task {
+            position: absolute;
+            font-size: 20px;
+            width: 230px;
+            display: flex;
+            flex-direction: row;            
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 5px 10px rgb(0, 0, 0);
+            border: 1px solid rgb(163, 163, 163);
+            cursor: pointer;
+        }
+            .task > p {
+                width: 180px;
+                white-space: nowrap; /* Prevent text from wrapping */
+                overflow: hidden; /* Hide any overflowing content */
+                text-overflow: ellipsis;
+            }
+        div .fa {
+            margin: auto 5px;
+        }
+        div > .fa-trash {
+            color: red;            
+        }
+        div > .fa-check {
+            color: green;
+        }
+        div > .fa-check:hover,
+        div > .fa-trash:hover {
+            transform: scale(1.3);
+        }
+
+
+    
